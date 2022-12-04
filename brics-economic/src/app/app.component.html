@@ -1,0 +1,24 @@
+<mat-toolbar>
+  <span>BRICS Economic Comparison</span>
+</mat-toolbar>
+
+<div class="description">
+  <h1>BRICS</h1>
+
+  <p>
+    BRICS is an acronym for five leading emerging economies: Brazil, Russia,
+    India, China, and South Africa. The first four were initially grouped as
+    "BRIC" (or "the BRICs") in 2001 by Goldman Sachs economist Jim O'Neill, who
+    coined the term to describe fast-growing economies that would collectively
+    dominate the global economy by 2050; South Africa was added in 2010.
+  </p>
+</div>
+
+<div class="container">
+  <app-membership-card
+    *ngFor="let country of economicData"
+    [country]="country"
+  ></app-membership-card>
+</div>
+
+<router-outlet></router-outlet>
