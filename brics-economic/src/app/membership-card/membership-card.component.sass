@@ -1,0 +1,83 @@
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+  width: 100%
+  margin: 2rem auto
+  background-color: #fff
+
+  mat-card
+    padding: 1rem
+    width: 350px
+    height: max-content
+    background-color: #f5f5f5
+    border-radius: 5px
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1)
+
+    &:hover
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2)
+
+    mat-card-header
+      align-items: center
+      gap: 1rem
+      padding: 0 1rem
+      padding-bottom: 1rem
+      border-bottom: 2px solid #ccc
+
+      .membership-card-image
+          background-size: cover
+          margin: 0
+
+          &--brazil
+            background-image: url('../../assets/brasil.png') !important
+
+          &--china
+            background-image: url('../../assets/china.png') !important
+
+          &--india
+            background-image: url('../../assets/india.png') !important
+
+          &--russia
+            background-image: url('../../assets/russia.png') !important
+
+          &--south
+            background-image: url('../../assets/africa-do-sul.png') !important
+
+      .title
+        font-size: 1.5rem
+        font-weight: 500
+        text-transform: capitalize
+
+    mat-card-content
+      margin: .5rem 0
+
+      .population,
+      .gdp,
+      .gdp-per-capita,
+      .hdi,
+      .debt,
+      .debt-percentage-GDP,
+      .deficit-percentage-GDP
+        display: flex
+        justify-content: space-between
+        margin: 0.5rem 0
+        padding: 0.5rem
+        border-bottom: 2px solid #ccc
+
+        &:not(:last-child)
+          border-bottom: 1px dashed #e0e0e0
+
+        .label
+          font-size: 1rem
+          font-weight: 500
+
+        .value
+          font-size: 1rem
+          font-weight: 300
+
+  mat-card-footer
+    font-size: 0.8rem
+    text-align: center

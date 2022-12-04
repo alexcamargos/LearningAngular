@@ -1,0 +1,49 @@
+<div class="container">
+  <mat-card class="membership-card">
+    <mat-card-header class="membership-card-header">
+      <div
+        mat-card-avatar
+        class="membership-card-image membership-card-image--{{ country.name }}"
+      ></div>
+
+      <div class="title">{{ country.name }}</div>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="population">
+        <span class="label">Population</span>
+        <span class="value">{{ country.population | number }}</span>
+      </div>
+      <div class="gdp">
+        <span class="label">Annual GDP </span>
+        <span class="value">{{ country.gdp | currency }}M</span>
+      </div>
+      <div class="gdp-per-capita">
+        <span class="label">GDP Per Capita</span>
+        <span class="value">{{ country.gdpPerCapita | currency }}</span>
+      </div>
+      <div class="hdi">
+        <span class="label">HDI</span>
+        <span class="value">{{ country.hdi | number }}</span>
+      </div>
+      <div class="debt">
+        <span class="label">Debt ($M)</span>
+        <span class="value">{{ country.debt | currency }}M</span>
+      </div>
+      <div class="debt-percentage-GDP">
+        <span class="label">Debt (%GDP)</span>
+        <span class="value">{{
+          country.debtPercentageGDP | percent : "2.2"
+        }}</span>
+      </div>
+      <div class="deficit-percentage-GDP">
+        <span class="label">Deficit (%GDP)</span>
+        <span class="value">{{
+          country.deficitPercentageGDP | percent : "2.2"
+        }}</span>
+      </div>
+    </mat-card-content>
+
+    <mat-card-footer> Font: https://countryeconomy.com </mat-card-footer>
+  </mat-card>
+</div>
