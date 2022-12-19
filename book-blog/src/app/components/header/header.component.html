@@ -1,1 +1,30 @@
-<p>header works!</p>
+<div class="container">
+  <mat-toolbar class="container--bgt">
+    <div class="container--title">
+      <picture>
+        <img src="../../../assets/books.png" alt="Books" />
+      </picture>
+      <span>Books</span>
+    </div>
+
+    <span class="spacing"></span>
+
+    <div class="container--types">
+      <button mat-flat-button color="primary" class="selected">
+        <mat-icon>menu_book</mat-icon>
+        Books
+      </button>
+
+      <button mat-flat-button color="primary">
+        <mat-icon>headphones</mat-icon>
+        AudioBooks
+      </button>
+    </div>
+
+    <span class="spacing"></span>
+
+    <div class="container-bookmark">
+      <mat-icon>bookmark</mat-icon>
+    </div>
+  </mat-toolbar>
+</div>
