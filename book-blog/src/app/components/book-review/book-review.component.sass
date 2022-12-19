@@ -1,0 +1,33 @@
+.container
+  display: flex
+  gap: 1rem
+
+  .book
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+
+    &--title
+      font-size: 1.2rem
+      font-weight: 500
+
+    &--author
+      font-size: 1rem
+      font-weight: 300
+
+    a
+      font-size: 1rem
+      font-weight: 300
+      color: #2c1810
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+  .book-rate
+    display: inline-flex
+    gap: .2rem
+    color: #ccc
+
+    .marked
+      color: #2c1810 !important
