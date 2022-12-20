@@ -1,6 +1,12 @@
 .container
-  display: flex
-  gap: 1rem
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 2rem
+  flex: auto
+
+  &--content
+    display: flex
+    gap: 1rem
 
   .book
     display: flex
