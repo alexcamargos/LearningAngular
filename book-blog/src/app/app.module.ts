@@ -11,6 +11,9 @@ import { BookReviewComponent } from './components/book-review/book-review.compon
 import { FeaturedAuthorComponent } from './components/featured-author/featured-author.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { HomeComponent } from './pages/home/home.component';
+import { ContentComponent } from './pages/content/content.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BookReviewComponent,
     FeaturedAuthorComponent,
     FooterComponent,
+    HomeComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
