@@ -36,13 +36,12 @@ export class ContentComponent implements OnInit {
     this.route.paramMap.subscribe(
       (value) => {
         this.id = value.get('id');
-        console.log(this.id);
       },
       (error) => {
         console.log(error);
       },
       () => {
-        console.log('Completed');
+        console.log('Load data for backend completed!');
       }
     );
 

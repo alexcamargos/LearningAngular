@@ -11,10 +11,10 @@ export class BookReviewComponent implements OnInit {
   @Input() blogPosts: BlogPost[];
 
   constructor(private blogPostService: BlogPostService) {
-    this.blogPosts = this.blogPostService.blogPosts;
+    this.blogPosts = [];
   }
 
   ngOnInit(): void {
-    console.log(this.blogPosts);
+    this.blogPosts = this.blogPostService.blogPosts;
   }
 }
