@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/styles/variables'
+
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  color: $font-color
+  font-family: 'Roboto', Arial, sans-serif
+
+body
+  height: 100%
+  margin: 0 auto
+
+// Hiperlink
+a
+  cursor: pointer
+  text-decoration: none
+  color: $primary
+
+a:hover
+  opacity: 0.8
+
+/* Button */
+.button, button
+  display: inline-flex
+  align-items: center
+  padding: 8px 16px
+  border-radius: 2px
+  font-size: 14px
+  cursor: pointer
+  background-color: $primary
+  color: $secondary-alternative
+  border: none
+
+.button:hover, button:hover
+  opacity: 0.8
+  font-weight: normal
+
+.button:disabled, button:disabled
+  opacity: 0.5
+  cursor: auto
