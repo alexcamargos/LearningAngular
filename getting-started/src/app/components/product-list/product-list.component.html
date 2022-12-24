@@ -1,1 +1,21 @@
-<p>product-list works!</p>
+<div class="container">
+  <h2>Products</h2>
+
+  <div *ngFor="let product of products">
+    <h4 *ngIf="product.name">
+      <a [title]="'Purchase ' + product.name">
+        {{ product.name }}
+      </a>
+    </h4>
+
+    <div class="product-description">
+      <img
+        src="https://via.placeholder.com/200.png/09f/fff"
+        alt="{{ product.name }}"
+      />
+      <p *ngIf="product.description">
+        {{ product.description }}
+      </p>
+    </div>
+  </div>
+</div>
