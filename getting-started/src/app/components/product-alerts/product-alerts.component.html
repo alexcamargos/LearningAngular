@@ -1,1 +1,7 @@
-<p>product-alerts works!</p>
+<p
+  *ngIf="
+    product && product.price > lowTargetPrice && product.price < highTargetPrice
+  "
+>
+  <button type="button" (click)="share(product)">Notify Me</button>
+</p>
