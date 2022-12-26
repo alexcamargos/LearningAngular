@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: 'Galago 14"',
+    name: 'galago 14"',
     category: 'laptops',
     price: 999,
     description:
@@ -9,7 +9,7 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Lemur Pro 14"',
+    name: 'lemur pro 14"',
     category: 'laptops',
     price: 1199,
     description:
@@ -17,7 +17,7 @@ export const products = [
   },
   {
     id: 3,
-    name: 'Darter Pro 15"',
+    name: 'darter pro 15"',
     category: 'laptops',
     price: 1059,
     description:
@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: 4,
-    name: 'Gazelle 15" or 17"',
+    name: 'gazelle 15" or 17"',
     category: 'laptops',
     price: 1299,
     description:
@@ -33,7 +33,7 @@ export const products = [
   },
   {
     id: 5,
-    name: 'Oryx Pro 15" or 17"',
+    name: 'oryx pro 15" or 17"',
     category: 'laptops',
     price: 2199,
     description:
@@ -41,7 +41,7 @@ export const products = [
   },
   {
     id: 6,
-    name: 'THELIO',
+    name: 'thelio',
     category: 'desktops',
     price: 1149,
     description:
@@ -49,7 +49,7 @@ export const products = [
   },
   {
     id: 7,
-    name: 'THELIO MIRA',
+    name: 'thelio mira',
     category: 'desktops',
     price: 1199,
     description:
@@ -57,7 +57,7 @@ export const products = [
   },
   {
     id: 8,
-    name: 'THELIO MAJOR',
+    name: 'thelio major',
     category: 'desktops',
     price: 2499,
     description:
@@ -65,7 +65,7 @@ export const products = [
   },
   {
     id: 9,
-    name: 'THELIO MEGA',
+    name: 'thelio mega',
     category: 'desktops',
     price: 4699,
     description:
@@ -73,7 +73,7 @@ export const products = [
   },
   {
     id: 10,
-    name: 'THELIO MASSIVE',
+    name: 'thelio massive',
     category: 'desktops',
     price: 3699,
     description:
@@ -81,7 +81,7 @@ export const products = [
   },
   {
     id: 11,
-    name: 'Meerkat',
+    name: 'meerkat',
     category: 'mini-pcs',
     price: 499,
     description:
@@ -89,7 +89,7 @@ export const products = [
   },
   {
     id: 12,
-    name: 'Eland 1U',
+    name: 'eland 1u',
     category: 'servers',
     price: 3399,
     description:
@@ -97,7 +97,7 @@ export const products = [
   },
   {
     id: 13,
-    name: 'Eland Pro 1U',
+    name: 'eland pro 1u',
     category: 'servers',
     price: 3999,
     description:
@@ -105,7 +105,7 @@ export const products = [
   },
   {
     id: 14,
-    name: 'Eland Pro 2U',
+    name: 'eland pro 2u',
     category: 'servers',
     price: 4399,
     description:
