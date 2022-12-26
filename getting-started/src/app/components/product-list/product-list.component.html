@@ -3,15 +3,15 @@
 
   <div *ngFor="let product of products">
     <h4 *ngIf="product.name">
-      <a [title]="'Purchase ' + product.name">
-        {{ product.name }}
+      <a [title]="'Purchase ' + product.name | uppercase">
+        {{ product.name | uppercase }}
       </a>
     </h4>
 
     <div class="product-description">
       <img
         src="https://via.placeholder.com/200.png/09f/fff"
-        alt="{{ product.name }}"
+        alt="{{ product.name | uppercase }}"
       />
       <p *ngIf="product.description">
         {{ product.description }}

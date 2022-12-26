@@ -16,6 +16,6 @@ export class ProductListComponent {
   }
 
   onNotify(product: Product) {
-    window.alert(`You will be notified when the ${product.name} goes on sale`);
+    window.alert(`You will be notified when the ${product.name.toUpperCase()} goes on sale`);
   }
 }
