@@ -5,4 +5,5 @@ export interface Product {
   price: number;
   promotion: boolean;
   description: string;
+  image: string;
 }
