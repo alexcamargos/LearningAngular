@@ -3,13 +3,7 @@
     <button type="button" (click)="share(product)">Share</button>
   </p>
 
-  <p
-    *ngIf="
-      product &&
-      product.price > lowTargetPrice &&
-      product.price < highTargetPrice
-    "
-  >
+  <p *ngIf="product && product.promotion == false">
     <button type="button" (click)="notify.emit()">Notify Me</button>
   </p>
 </div>

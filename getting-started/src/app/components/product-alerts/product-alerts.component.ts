@@ -10,12 +10,9 @@ export class ProductAlertsComponent {
   @Input() product!: Product;
   @Output() notify = new EventEmitter();
 
-  lowTargetPrice = 1000;
-  highTargetPrice = 2000;
-
   constructor() {}
 
   share(product: Product) {
-    window.alert(`The ${product.name} has been shared!`);
+    window.alert(`The ${product.name.toUpperCase()} has been shared!`);
   }
 }
