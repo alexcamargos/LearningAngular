@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { Product } from '../../models/product';
 import { products } from '../../data/products';
 
@@ -8,9 +9,13 @@ import { products } from '../../data/products';
   styleUrls: ['./product-list.component.sass'],
 })
 export class ProductListComponent {
-  products: Product[] = products;
+  products: Product[];
 
   constructor() {
     this.products = products;
+  }
+
+  onNotify(product: Product) {
+    window.alert(`You will be notified when the ${product.name} goes on sale`);
   }
 }
