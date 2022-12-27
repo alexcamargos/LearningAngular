@@ -6,18 +6,18 @@ import { AngularMaterialModule } from './angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './components/app-root/app.component';
-import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductAlertsComponent } from './components/product-alerts/product-alerts.component';
 
+import { HeaderComponent } from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent,
+    HeaderComponent,
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
