@@ -1,1 +1,33 @@
-<p>product-details works!</p>
+<app-top-bar></app-top-bar>
+
+<div class="container" *ngIf="product">
+  <div class="container--title">
+    <button
+      mat-icon-button
+      color="primary"
+      aria-label="Back"
+      [routerLink]="['/products']"
+    >
+      <mat-icon color="primary">arrow_back</mat-icon>
+    </button>
+    <h2>Product Details</h2>
+  </div>
+
+  <mat-card class="product-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title> {{ product.name | uppercase }}</mat-card-title>
+        <mat-card-subtitle> {{ product.category }}</mat-card-subtitle>
+        <p>{{ product.price | currency }}</p>
+      </mat-card-title-group>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="../../../assets/products/{{ product.image }}"
+      alt="{{ product.name | uppercase }}"
+    />
+    <mat-card-content>
+      <p>{{ product.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
