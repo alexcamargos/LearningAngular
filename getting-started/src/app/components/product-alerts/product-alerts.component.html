@@ -1,9 +1,13 @@
 <div class="container" *ngIf="product">
   <p>
-    <button type="button" (click)="share(product)">Share</button>
+    <button mat-raised-button (click)="share(product)">Share</button>
   </p>
 
   <p *ngIf="product && product.promotion == false">
-    <button type="button" (click)="notify.emit()">Notify Me</button>
+    <button mat-raised-button (click)="notify.emit()">Notify Me</button>
   </p>
+
+  <button mat-raised-button [routerLink]="['/products', product.id]">
+    Details
+  </button>
 </div>
