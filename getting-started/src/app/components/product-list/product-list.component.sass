@@ -4,21 +4,36 @@
   align-items: stretch
   margin: 1rem 4rem
 
-  h2
-    margin: 2rem 0
-    font-size: 2rem
-    align-self: flex-start
-
-  h4
-    align-self: flex-start
-    margin: 1rem 0
-    font-size: 1.5rem
-
-  .product-description
-    display: flex
-    align-items: center
+  &--card
+    display: grid
+    justify-items: center
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr))
     gap: 1rem
-    margin: 2rem 0
 
-    img
-      width: 200px
+    .product-card
+      margin-bottom: 1rem
+      width: 500px
+      padding: .5rem
+
+    h2
+      margin: 2rem 0
+      font-size: 2rem
+      align-self: flex-start
+
+    h4
+      align-self: flex-start
+      margin: 1rem 0
+      font-size: 1.5rem
+
+    .product-description
+      display: flex
+      align-items: center
+      gap: 1rem
+      margin: 1rem
+
+      img
+        width: 200px
+
+      p
+        white-space: pre-line // To preserve original line breaks '\n'.
+        font-size: 1.2rem

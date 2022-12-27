@@ -1,29 +1,40 @@
 <div class="container">
   <h2>Products</h2>
 
-  <div *ngFor="let product of products">
-    <h4 *ngIf="product.name">
-      <a
-        [title]="'Purchase ' + product.name | uppercase"
-        [routerLink]="['/products', product.id]"
-      >
-        {{ product.name | uppercase }}
-      </a>
-    </h4>
+  <div class="container--card">
+    <mat-card class="product-card" *ngFor="let product of products">
+      <mat-card-header>
+        <mat-card-title>
+          <a
+            [title]="'Purchase ' + product.name | uppercase"
+            [routerLink]="['/products', product.id]"
+          >
+            {{ product.name | uppercase }}
+          </a>
+        </mat-card-title>
+        <mat-card-subtitle>
+          {{ product.category }}
+        </mat-card-subtitle>
+      </mat-card-header>
 
-    <div class="product-description">
-      <img
-        src="../../../assets/products/{{ product.image }}"
-        alt="{{ product.name | uppercase }}"
-      />
-      <p *ngIf="product.description">
-        {{ product.description }}
-      </p>
-    </div>
+      <mat-card-content>
+        <div class="product-description">
+          <img
+            src="../../../assets/products/{{ product.image }}"
+            alt="{{ product.name | uppercase }}"
+          />
+          <p *ngIf="product.description">
+            {{ product.description }}
+          </p>
+        </div>
+      </mat-card-content>
 
-    <app-product-alerts
-      [product]="product"
-      (notify)="onNotify(product)"
-    ></app-product-alerts>
+      <mat-card-actions>
+        <app-product-alerts
+          [product]="product"
+          (notify)="onNotify(product)"
+        ></app-product-alerts>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
