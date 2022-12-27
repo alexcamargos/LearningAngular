@@ -22,7 +22,8 @@
         <mat-card-subtitle class="product-card--subtitle">
           {{ product.category }}
         </mat-card-subtitle>
-        <p>{{ product.price | currency }}</p>
+
+        <p class="product-card--price">{{ product.price | currency }}</p>
       </mat-card-title-group>
     </mat-card-header>
 
@@ -32,6 +33,7 @@
       alt="{{ product.name | uppercase }}"
     />
     <mat-card-content>
+      <h4>Tech Specs</h4>
       <p>{{ product.description }}</p>
     </mat-card-content>
   </mat-card>
