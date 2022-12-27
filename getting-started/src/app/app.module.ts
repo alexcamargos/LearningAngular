@@ -12,6 +12,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { ProductAlertsComponent } from './components/product-alerts/product-alerts.component';
 
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomeComponent } from './pages/home/home.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
