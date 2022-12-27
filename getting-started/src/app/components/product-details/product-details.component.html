@@ -15,12 +15,17 @@
 
   <mat-card class="product-card">
     <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title> {{ product.name | uppercase }}</mat-card-title>
-        <mat-card-subtitle> {{ product.category }}</mat-card-subtitle>
+      <mat-card-title-group class="product-card--title-group">
+        <mat-card-title class="product-card--title">
+          {{ product.name | uppercase }}
+        </mat-card-title>
+        <mat-card-subtitle class="product-card--subtitle">
+          {{ product.category }}
+        </mat-card-subtitle>
         <p>{{ product.price | currency }}</p>
       </mat-card-title-group>
     </mat-card-header>
+
     <img
       mat-card-image
       src="../../../assets/products/{{ product.image }}"
