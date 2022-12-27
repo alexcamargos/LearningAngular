@@ -1,13 +1,35 @@
 <div class="container" *ngIf="product">
   <p>
-    <button mat-raised-button (click)="share(product)">Share</button>
+    <button mat-raised-button (click)="share(product)">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Share product."
+        fontIcon="share"
+      ></mat-icon>
+
+      Share
+    </button>
   </p>
 
   <p *ngIf="product && product.promotion == false">
-    <button mat-raised-button (click)="notify.emit()">Notify Me</button>
+    <button mat-raised-button (click)="notify.emit()">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Notify me when product is on sale."
+        fontIcon="notifications"
+      ></mat-icon>
+
+      Notify Me
+    </button>
   </p>
 
   <button mat-raised-button [routerLink]="['/products', product.id]">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Add product to cart."
+      fontIcon="shopping_cart"
+    ></mat-icon>
+
     Details
   </button>
 </div>
