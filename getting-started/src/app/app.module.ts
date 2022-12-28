@@ -9,6 +9,7 @@ import { AppComponent } from './components/app-root/app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductAlertsComponent } from './components/product-alerts/product-alerts.component';
+import { CartComponent } from './components/cart/cart.component';
 
 import { HeaderComponent } from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -17,10 +18,11 @@ import { FooterComponent } from './pages/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
+    CartComponent,
+    HeaderComponent,
     HomeComponent,
     FooterComponent,
   ],
