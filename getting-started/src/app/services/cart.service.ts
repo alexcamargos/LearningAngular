@@ -16,6 +16,12 @@ export class CartService {
     return this.items;
   }
 
+  removeItem(item: Product) {
+    this.items = this.items.filter((product) => product !== item);
+
+    return this.items;
+  }
+
   clearCart() {
     this.items = [];
 
