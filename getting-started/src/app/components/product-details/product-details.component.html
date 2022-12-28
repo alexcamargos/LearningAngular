@@ -34,5 +34,17 @@
       <h4>Tech Specs</h4>
       <p>{{ product.description }}</p>
     </mat-card-content>
+
+    <mat-card-actions class="product-card--actions">
+      <button mat-flat-button (click)="addToCart(product)">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Buy this product."
+          fontIcon="shopping_cart"
+        ></mat-icon>
+
+        Buy
+      </button>
+    </mat-card-actions>
   </mat-card>
 </div>
