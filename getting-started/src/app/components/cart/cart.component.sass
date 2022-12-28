@@ -1,0 +1,33 @@
+@import '../../../assets/styles/variables'
+
+.container
+  display: flex
+  flex-direction: column
+  gap: 2rem
+
+  max-width: 600px
+
+  padding: 1rem
+
+  h2
+    font-size: 2rem
+    font-weight: 500
+    margin: 1rem
+
+  .cart-content
+    display: flex
+    justify-content: space-between
+
+    .product,
+    .price,
+    .id
+      font-size: 1.5rem
+      font-weight: 500
+      margin-bottom: 1rem
+
+    .price
+      color: $tertiary
+      font-weight: 700
+
+  .cart-actions
+    justify-content: flex-end

@@ -1,1 +1,23 @@
-<p>cart works!</p>
+<div class="container">
+  <h2>Cart</h2>
+
+  <mat-card *ngFor="let item of items; index as index">
+    <mat-card-content class="cart-content">
+      <span class="id"> {{ index + 1 }}</span>
+      <span class="product"> {{ item.name | uppercase }} </span>
+      <span class="price"> {{ item.price | currency }} </span>
+    </mat-card-content>
+
+    <mat-card-actions class="cart-actions">
+      <button mat-button (click)="removeItem(item)">
+        <mat-icon
+        aria-hidden="false"
+        aria-label="Remove this product."
+        fontIcon="delete"
+      ></mat-icon>
+
+        Remove
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
